@@ -1,0 +1,24 @@
+{
+  "name": "chatblocks-sample-project",
+  "version": "1.0.0",
+  "description": "Example of declarative chatbot for Messenger",
+  "main": "index.js",
+  "scripts": {
+    "ngrok": "ngrok http 3000 --subdomain=YOUR_SUBDOMAIN",
+    "blocks": "babel --watch blocks --out-dir blocksDist",
+    "start-server": "nodemon app.js"
+  },
+  "author": "Szymon Korytnicki",
+  "license": "MIT",
+  "dependencies": {
+    "chatblocks": "^1.0.3",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
